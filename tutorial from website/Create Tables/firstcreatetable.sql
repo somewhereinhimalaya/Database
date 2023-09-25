@@ -82,3 +82,29 @@ alter table customers
 alter table customers
   modify (customer_name varchar2(100) not null,
           city varchar2(100));
+
+--Example 5 drop column of a table
+--drop means deletetion 
+alter table customers
+  drop column customer_name;
+
+--Example 6 rename column of a table
+alter table customers
+  rename column customer_name to cname;
+
+--Example 7 rename table
+alter table customers
+  rename to retailers
+
+
+
+
+
+-----------------------------------------ORACLE DROP TABLE STATEMENT------------------------------------------------------------------
+--Example 1 Drop table with purge paramter
+--deleting this way you won't get it on the recycle bin 
+drop table customers purge;
+
+
+
+----------------------------------------ORACLE GLOBAL TERMPORARY TABLES----------------------------------------------------------------

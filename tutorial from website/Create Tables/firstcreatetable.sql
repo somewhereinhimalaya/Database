@@ -108,3 +108,47 @@ drop table customers purge;
 
 
 ----------------------------------------ORACLE GLOBAL TERMPORARY TABLES----------------------------------------------------------------
+--Temporary tables can't have foreign keys
+--Example 1: 
+create global temporary table students(
+  student_id numeric(10) not null,
+  student_name varchar2(10) not null,
+  student_address varchar2(50)
+  );
+
+
+
+------------------------------------ORACLE VIEW-----------------------------------------------------------------
+--view is created by a query joining one or more tables
+--Example 1 here we will first create two tables and create a view query
+--suppliers table
+create table "suppliers"(
+  "supplier_id" number,
+  "supplier_name" varchar2(4000),
+  "supplier_address" varchar2(4000)
+  )
+/
+--orders table
+create table "orders"(
+  "order_no." number,
+  "quantity" number,
+  "price" number
+)
+/
+--Create view query named sup_orders
+create view sup_orders as 
+select suppliers.supplier_id,orders.quantity,orders.price
+from suppliers
+innner join orders
+on suppliers.supplier_id=supplier_id
+where suppliers.supplier_name="vojo";
+/*
+ouput 
+view created
+0.21 seconds
+*/
+
+
+
+--Example 2 check the oracle view by this query
+select * from sup_orders;

@@ -70,3 +70,15 @@ alter table customers
 alter table customers
   add(customer_type varchar2(50),
     customer_address varchar2(50));
+
+--Example 3 alter column of a table
+--Here you are updating the customer_name charater to contain 100 max character
+alter table customers
+  modify customer_name varchar2(100) not null;
+
+
+--Example 4 modify multiple columns of a table
+--here we modified two columns: customer_name and city 
+alter table customers
+  modify (customer_name varchar2(100) not null,
+          city varchar2(100));

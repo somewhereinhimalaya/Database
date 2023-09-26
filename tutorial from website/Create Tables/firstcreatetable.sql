@@ -152,3 +152,17 @@ view created
 
 --Example 2 check the oracle view by this query
 select * from sup_orders;
+
+
+---------------------------------------------ORACLE UPDATE VIEW--------------------------------------------------------
+--Example 1 create or replace view
+--Write query to update the definition of oracle view called sup-orders without dropping it 
+create or replace view sup-orders as 
+  select suppliers.suppplier_id,orders.quanity,orders.price
+  from suppliers
+  inner join orders
+  on suppliers.supplier_id=supplier_id
+  where suppliers.supplier_name='hcl'
+
+--Example 2 check oracle view by this query
+select * from sup_orders;

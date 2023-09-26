@@ -166,3 +166,7 @@ create or replace view sup-orders as
 
 --Example 2 check oracle view by this query
 select * from sup_orders;
+
+--Example 3 oracle drop view
+  --remove the delete the view completely
+drop view sup_orders;

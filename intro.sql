@@ -18,6 +18,12 @@ grant connect,resource to anishbro
   CREATE TABLESPACE custom_tablespace 
 DATAFILE '/path/to/datafile.dbf' SIZE 100M;
 
+--show current logged user
+select user from dual;
+
+--save changes you made permanent
+commit
+
 --connect to user 
 connect user 
 --THIRD STEP(OPTIONAL)

@@ -21,6 +21,17 @@ DATAFILE '/path/to/datafile.dbf' SIZE 100M;
 --show current logged user
 select user from dual;
 
+
+
+--Show the information of the current user:
+select * from user_users;
+
+--show all users your user can see
+ select username from all_users order by username;
+
+--display all users in a database that a user having high level of authority can see in oracle
+select username from dba_users order by username;
+
 --save changes you made permanent
 commit
 

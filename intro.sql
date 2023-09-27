@@ -9,6 +9,8 @@
     --here anishbro is username and 8080 is a password
 create user anishbro identified by 8080;
 grant connect,resource to anishbro
+  --grant create table access to user
+  grant create table to anishbro
 --THIRD STEP(OPTIONAL)
 
       --LIST ALL THE TABLE USING THIS QUERY

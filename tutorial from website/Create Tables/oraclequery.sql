@@ -138,3 +138,11 @@ and customer_id>2;
 
 
 -------------------------------------------ORACLE TRUNCATE TABLE-----------------------------------------------------------------------
+
+--Example 1
+          --Oracle Truncate Table Example
+truncate table customers;
+
+--Example 2
+          --Oracle Delete Table Example
+delete table customers;

@@ -123,3 +123,18 @@ where age<25;
 
 
 -------------------------------------------ORACLE DELETE STATEMENT-------------------------------------------------------------------
+
+--Example 1
+        --Oracle Delete Example: ON one condition
+        --Delete all records from customers table wher ename is 'Sohan'
+delete from customers
+where name='Sohan'
+
+--Example 2
+        --delete all records form customer table where last name is Maurya and customer_id is greater than 2
+delete from customers
+where last_name='Maurya'
+and customer_id>2;
+
+
+-------------------------------------------ORACLE TRUNCATE TABLE-----------------------------------------------------------------------

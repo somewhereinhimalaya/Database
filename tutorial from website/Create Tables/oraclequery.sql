@@ -144,5 +144,5 @@ and customer_id>2;
 truncate table customers;
 
 --Example 2
-          --Oracle Delete Table Example
+          --Oracle Delete Table Example.
 delete table customers;

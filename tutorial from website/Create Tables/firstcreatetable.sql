@@ -170,3 +170,12 @@ select * from sup_orders;
 --Example 3 oracle drop view
   --remove the delete the view completely
 drop view sup_orders;
+
+
+
+
+
+
+
+
+--the changes will be made in this place today

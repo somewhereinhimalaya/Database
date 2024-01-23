@@ -180,3 +180,12 @@ from customer1;
 select count(age) as countage
 from customer1
 where salary>20000;
+
+select * 
+from customer1
+where name like 'c%';
+
+select * 
+from customer1
+where age like '21';
+

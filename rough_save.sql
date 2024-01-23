@@ -198,3 +198,60 @@ where age like '21';
 
 
 -- SUBQUERY
+CREATE TABLE employee10 (
+    id NUMBER,
+    name VARCHAR2(20),
+    city VARCHAR2(20)
+);
+
+CREATE TABLE employee20 (
+    id NUMBER,
+    name VARCHAR2(20),
+    designation VARCHAR2(20)
+);
+
+-- Filling values in employee10 table
+INSERT INTO employee10 (id, name, city)
+VALUES (1, 'shristee', 'raipur');
+INSERT INTO employee10 (id, name, city)
+VALUES (2, 'heena', 'bhilai');
+INSERT INTO employee10 (id, name, city)
+VALUES (3, 'suman', 'korba');
+INSERT INTO employee10 (id, name, city)
+VALUES (4, 'arun', 'raipur');
+INSERT INTO employee10 (id, name, city)
+VALUES (5, 'dolly', 'bhilai');
+INSERT INTO employee10 (id, name, city)
+VALUES (6, 'soniya', 'durg');
+INSERT INTO employee10 (id, name, city)
+VALUES (7, 'dhruv', 'korba');
+INSERT INTO employee10 (id, name, city)
+VALUES (8, 'rajat', 'raipur');
+INSERT INTO employee10 (id, name, city)
+VALUES (9, 'priyanka', 'raipur');
+INSERT INTO employee10 (id, name, city)
+VALUES (10, 'tushar', 'raipur');
+
+-- Filling values in employee20 table
+INSERT INTO employee20 (id, name, designation)
+VALUES (1, 'shristee', 'shareholder');
+INSERT INTO employee20 (id, name, designation)
+VALUES (2, 'heena', 'executive officer');
+INSERT INTO employee20 (id, name, designation)
+VALUES (3, 'suman', 'operating officer');
+INSERT INTO employee20 (id, name, designation)
+VALUES (4, 'arun', 'financial officer');
+INSERT INTO employee20 (id, name, designation)
+VALUES (5, 'dolly', 'technology officer');
+INSERT INTO employee20 (id, name, designation)
+VALUES (6, 'soniya', 'shareholder');
+INSERT INTO employee20 (id, name, designation)
+VALUES (7, 'dhruv', 'technology officer');
+INSERT INTO employee20 (id, name, designation)
+VALUES (8, 'rajat', 'financial officer');
+INSERT INTO employee20 (id, name, designation)
+VALUES (9, 'priyanka', 'operating officer');
+INSERT INTO employee20 (id, name, designation)
+VALUES (10, 'tushar', 'executive officer');
+*/
+select name,city from employee10 where id in(select id from employee20 where designation='shareholder');

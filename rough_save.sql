@@ -253,5 +253,5 @@ INSERT INTO employee20 (id, name, designation)
 VALUES (9, 'priyanka', 'operating officer');
 INSERT INTO employee20 (id, name, designation)
 VALUES (10, 'tushar', 'executive officer');
-*/
+
 select name,city from employee10 where id in(select id from employee20 where designation='shareholder');

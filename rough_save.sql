@@ -142,3 +142,18 @@ from customer1
 where salary > 1
 group by states
 having count(*) >0;
+
+select name, min(age) as agegranted
+from customer1
+where salary>20000
+group by name
+having min(age) <25;
+
+
+select name,max(age) as agegranted
+from customer1
+where salary>20000
+group by name
+having max(age) > 30;
+
+

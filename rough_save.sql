@@ -111,3 +111,34 @@ select billing_address,sum(sales) as totalsales
 from salesdepartments
 group by billing_address
 having sum(sales)<1000;
+
+
+
+-- USING AGGREGTATE FUNCTIONS LIKE SUM AND COUNT
+
+
+insert all
+into customer1(name,age,salary,states) values('mohan',16,1200,'bihar')
+into customer1(name,age,salary,states) values('rohan',21,25000,'bihar')
+into customer1(name,age,salary,states) values('teipratap',26,5600,'bihar')
+into customer1(name,age,salary,states) values('chanchal',21,25000,'delhi')
+into customer1(name,age,salary,states) values('charu',21,23000,'delhi')
+into customer1(name,age,salary,states) values('chanda',27,27000,'delhi')
+into customer1(name,age,salary,states) values('chandni',31,31000,'delhi')
+into customer1(name,age,salary,states) values('pralaynath',56,76000,'tamilnadu')
+into customer1(name,age,salary,states) values('gundaswami',65,87000,'tamilnadu')
+into customer1(name,age,salary,states) values('hina',18,18000,'maharashtra')
+select * from dual;
+
+
+select name,sum(age) as someages
+from customer1
+where age>1
+group by name
+having sum(age) > 1;
+
+select states,count(*) as numberofcustomer
+from customer1
+where salary > 1
+group by states
+having count(*) >0;

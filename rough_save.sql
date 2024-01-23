@@ -78,9 +78,10 @@ from customers --primary key
 inner join employee  --foreign key
 on customers.customer_id=employee.customer_id;
 
-
-
-
+select c.customer_name,e.employee_name,e.employee_dob
+from customers c
+inner join employee e
+on c.customer_id = e.customer_id;
 
 
 -- THE BELOW QUERIES ARE OF FUNCTION
@@ -189,3 +190,11 @@ select *
 from customer1
 where age like '21';
 
+
+
+
+
+
+
+
+-- SUBQUERY

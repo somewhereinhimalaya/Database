@@ -156,4 +156,27 @@ where salary>20000
 group by name
 having max(age) > 30;
 
+select states,avg(age) as averageage
+from customer1
+group by states;
 
+
+-- The question are asked using this kind of aggregate functions
+select sum(age) as totalsum
+from customer1;
+
+select avg(age) as averageage
+from customer1;
+
+select min(age) as minage
+from customer1;
+
+select max(age) as maxage
+from customer1;
+
+select count(age) as countsage
+from customer1;
+
+select count(age) as countage
+from customer1
+where salary>20000;

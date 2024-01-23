@@ -79,3 +79,35 @@ inner join employee  --foreign key
 on customers.customer_id=employee.customer_id;
 
 
+
+
+
+
+-- THE BELOW QUERIES ARE OF FUNCTION
+
+create table salesdepartments(
+    item varchar2(4000),
+    sales number,
+    billing_address varchar2(4000)
+);
+
+insert all
+into salesdepartments(item, sales, billing_address) values('shoes', 120, 'Agra')
+into salesdepartments(item, sales, billing_address) values('Belts', 105, 'Kolkata')
+into salesdepartments(item, sales, billing_address) values('Shoes', 45, 'Allahabad')
+into salesdepartments(item, sales, billing_address) values('Sari', 210, 'Varanasi')
+into salesdepartments(item, sales, billing_address) values('Sari', 5000, 'Chennai')
+into salesdepartments(item, sales, billing_address) values('Medicines', 250, 'Salem')
+into salesdepartments(item, sales, billing_address) values('Computer', 210, 'Delhi')
+into salesdepartments(item, sales, billing_address) values('Computer', 1000, 'Kanpur')
+select * from dual;
+
+select item,sum(sales) as totalsales
+from salesdepartments
+group by item
+having sum(sales) <1000;
+
+select billing_address,sum(sales) as totalsales
+from salesdepartments
+group by billing_address
+having sum(sales)<1000;

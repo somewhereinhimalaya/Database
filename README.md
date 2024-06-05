@@ -11,3 +11,8 @@ What to get in this repo
 Collection of database design for different types of websites
 It is well documented and easy to make changes to it 
 ```
+
+Personal Moto
+```text
+Urge to push one design every single day
+```

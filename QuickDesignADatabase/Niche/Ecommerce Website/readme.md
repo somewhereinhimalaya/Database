@@ -31,7 +31,7 @@ Government to Business (G2B)
 ```
 
 Government to Consumer(G2C)
-``text
+```text
 
 ```
 

@@ -1,6 +1,6 @@
 ## How this works
 
-## Customer views product to pays the product
+## Customer views product to product payment
 
 one product in one cart 
 

@@ -25,5 +25,5 @@ step 4: customer choose the payment
 ```text
 fetch the amount put in payment table amount column
 change the status of payment
-like changes the payment is made and this detail is sent to admin
+like changes the payment status and other payment table column
 ```

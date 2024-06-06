@@ -38,4 +38,4 @@ Follow
 ```
 
 ## ERD
-![erd](https://github.com/vectorsigmaissomewhere/Database/blob/main/QuickDesignADatabase/Niche/Social%20Networking%20Site/Basic%20ecommerce%20website%20database/imagefile/1_RYJzuLSqpPZYBySld74o3A-ezgif.com-webp-to-png-converter.png')
+![erd](https://github.com/vectorsigmaissomewhere/Database/blob/main/QuickDesignADatabase/Niche/Social%20Networking%20Site/Basic%20ecommerce%20website%20database/imagefile/1_RYJzuLSqpPZYBySld74o3A-ezgif.com-webp-to-png-converter.png)

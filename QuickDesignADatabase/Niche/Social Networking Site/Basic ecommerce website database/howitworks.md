@@ -1,6 +1,40 @@
 ## How this works in a webapp
 
-This will be updated in the evening today
+user login into application
+
+Step 1
+```text
+user make a post 
+user post gets stored in a database of table named POST
+where the user_id is foreign key to know the user post
+```
+
+Step 2
+```text
+another user logins
+```
+
+Step 3
+```text
+The another user comments in the post
+in the comment table user_id is stored 
+also the post id is stored 
+why so because we must need a user_id and post_id 
+to track the other comment
+```
+
+step 4
+```text
+works same as comment
+```
+
+step 5
+```text
+Follow table
+here follow_id works as a primary key
+get all follower id from follower_id row can work to get
+all the followers list
+```
 
 
 ## Schema of the social media platform

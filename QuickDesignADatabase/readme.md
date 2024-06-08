@@ -28,3 +28,9 @@ List if all web app niche
 ```
 
 The above niche is again divided into sub niche
+
+all of these database is being implemented in django to show how each of the database works
+
+The implementation are made for only basics database
+
+Complex database with multiple foregign key kind of database will be implemented only in complex projects 
